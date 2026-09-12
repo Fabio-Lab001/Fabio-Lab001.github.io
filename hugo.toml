@@ -1,14 +1,11 @@
 baseURL = 'https://fabio-lab001.github.io/'
 languageCode = 'en-us'
 title = '[FABIO-LAB]'
-
-[module]
-  [[module.imports]]
-    path = "github.com/p3ld3v/retro-ms-dos"
+theme = 'terminal'
 
 [params]
-  author = "genesissmooth1"
-  description = "Computer Science & Tech Enthusiast"
+  contentTypeName = "posts"
+  themeColor = "blue"
   fullWidthTheme = false
   centerTheme = false
 
