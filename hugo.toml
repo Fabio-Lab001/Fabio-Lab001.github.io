@@ -1,13 +1,8 @@
 baseURL = 'https://fabio-lab001.github.io/'
 languageCode = 'en-us'
 title = '[FABIO-LAB]'
-theme = 'terminal'
-
-[params]
-  contentTypeName = "posts"
-  themeColor = "blue"
-  fullWidthTheme = false
-  centerTheme = false
+author = "genesissmooth1"
+description = "Computer Science & Tech Enthusiast"
 
 [menu]
   [[menu.main]]
