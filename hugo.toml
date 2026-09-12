@@ -1,0 +1,22 @@
+baseURL = '[https://fabio-lab001.github.io/](https://fabio-lab001.github.io/)'
+languageCode = 'en-us'
+title = '[FABIO-LAB]'
+theme = 'terminal'
+
+[params]
+  contentTypeName = "posts"
+  themeColor = "blue"
+  
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Identity"
+    url = "/about/"
+  [[menu.main]]
+    identifier = "resources"
+    name = "Resources"
+    url = "/resources/"
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
