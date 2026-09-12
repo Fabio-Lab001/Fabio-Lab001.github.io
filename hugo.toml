@@ -9,6 +9,8 @@ title = '[FABIO-LAB]'
 [params]
   contentTypeName = "posts"
   themeColor = "blue"
+  fullWidthTheme = false
+  centerTheme = false
 
 [menu]
   [[menu.main]]
