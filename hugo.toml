@@ -4,11 +4,13 @@ title = '[FABIO-LAB]'
 
 [module]
   [[module.imports]]
-    path = "github.com/mrmartineau/hugo-theme-retro-ms-dos"
+    path = "github.com/p3ld3v/retro-ms-dos"
 
 [params]
   author = "genesissmooth1"
   description = "Computer Science & Tech Enthusiast"
+  fullWidthTheme = false
+  centerTheme = false
 
 [menu]
   [[menu.main]]
