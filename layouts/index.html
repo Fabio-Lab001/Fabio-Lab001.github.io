@@ -2,99 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ .Site.Title }}</title>
   <link rel="stylesheet" href="{{ "css/dos.css" | relURL }}">
 </head>
 <body>
-
-<section class="rt-01" aria-labelledby="rt-01-title">
-  <h2 class="rt-01__sr" id="rt-01-title">CRT scanline and curvature layer stack</h2>
-
-  <div class="rt-01__theme">
-    <input class="rt-01__theme-input" type="checkbox" id="rt-01-theme">
-    <label class="rt-01__theme-label" for="rt-01-theme">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor"/></svg>
-      <span class="rt-01__sr">Toggle dark surround</span>
-    </label>
-  </div>
-
-  <div class="rt-01__stage">
-    <p class="rt-01__badge">Cathode-ray tube &middot; shadow-mask display</p>
-
-    <div class="rt-01__rig">
-      <div class="rt-01__bezel">
-        <div class="rt-01__screen">
-          
-          <!-- MAIN MONITOR CONTENT -->
-          <div class="rt-01__content">
-            <p class="rt-01__line rt-01__line--dim">SYSTEM MONITOR &mdash; {{ .Site.Title }}</p>
-            
-            <!-- Navigation -->
-            <nav style="display: flex; gap: 15px; margin-bottom: 10px;">
-              {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" style="color: var(--rt-01-glow); text-decoration: none;">[{{ .Name }}]</a>
-              {{ end }}
-            </nav>
-
-            <!-- Markdown Content from content/_index.md -->
-            <div style="text-align: left; width: 100%;">
-              {{ .Content }}
-            </div>
-
-            <p class="rt-01__line rt-01__line--dim">READY<span class="rt-01__caret" aria-hidden="true"></span></p>
-          </div>
-
-          <div class="rt-01__bloom" aria-hidden="true"></div>
-          <div class="rt-01__scan" aria-hidden="true"></div>
-          <div class="rt-01__vig" aria-hidden="true"></div>
-          <div class="rt-01__flick" aria-hidden="true"></div>
-        </div>
-
-        <div class="rt-01__chin">
-          <span class="rt-01__brand">TRINITRON&nbsp;/&nbsp;14"</span>
-          <span class="rt-01__led" aria-hidden="true"></span>
-        </div>
-      </div>
-
-      <!-- Control Panel Switches -->
-      <ul class="rt-01__panel">
-        <li class="rt-01__switch">
-          <input class="rt-01__cb" type="checkbox" id="rt-01-scan" checked>
-          <label class="rt-01__lb" for="rt-01-scan">
-            <span class="rt-01__lb-n">01</span>
-            <span class="rt-01__lb-t">Scanlines</span>
-            <span class="rt-01__lb-d">repeating-linear-gradient, 3px period</span>
-          </label>
-        </li>
-        <li class="rt-01__switch">
-          <input class="rt-01__cb" type="checkbox" id="rt-01-curve" checked>
-          <label class="rt-01__lb" for="rt-01-curve">
-            <span class="rt-01__lb-n">02</span>
-            <span class="rt-01__lb-t">Curvature</span>
-            <span class="rt-01__lb-d">border-radius plus inset corner vignette</span>
-          </label>
-        </li>
-        <li class="rt-01__switch">
-          <input class="rt-01__cb" type="checkbox" id="rt-01-bloom" checked>
-          <label class="rt-01__lb" for="rt-01-bloom">
-            <span class="rt-01__lb-n">03</span>
-            <span class="rt-01__lb-t">Phosphor bloom</span>
-            <span class="rt-01__lb-d">blurred duplicate, mix-blend-mode: screen</span>
-          </label>
-        </li>
-        <li class="rt-01__switch">
-          <input class="rt-01__cb" type="checkbox" id="rt-01-flick" checked>
-          <label class="rt-01__lb" for="rt-01-flick">
-            <span class="rt-01__lb-n">04</span>
-            <span class="rt-01__lb-t">Mains flicker</span>
-            <span class="rt-01__lb-d">6s opacity cycle, stops under reduced motion</span>
-          </label>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
+  <nav class="dos-nav">
+    <span class="dos-title">{{ .Site.Title }}</span>
+    {{ range .Site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </nav>
+  <main class="dos-container">
+    {{ .Content }}
+  </main>
 </body>
 </html>
