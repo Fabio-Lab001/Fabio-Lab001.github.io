@@ -13,8 +13,8 @@
   <div class="man-heading">ACCOUNTS</div>
   <div class="man-content">
     <div><a href="https://github.com/Fabio-Lab001" target="_blank" rel="noreferrer">Github</a></div>
-    <div><a href="https://discord.com/users/YOUR_DISCORD_ID" target="_blank" rel="noreferrer">Discord</a></div>
-    <div><a href="https://pwn.college/user/YOUR_PWN_ID" target="_blank" rel="noreferrer">pwn.college</a></div>
+    <div><a href="https://discord.com/users/cmhod212" target="_blank" rel="noreferrer">Discord</a></div>
+    <div><a href="https://pwn.college/user/rakitin_rn_init@dojo" target="_blank" rel="noreferrer">pwn.college</a></div>
   </div>
 </div>
 
