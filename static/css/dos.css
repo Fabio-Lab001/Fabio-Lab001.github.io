@@ -47,3 +47,32 @@ body::before {
   z-index: 999;
   pointer-events: none;
 }
+.man-section {
+  margin-bottom: 1.5rem;
+}
+
+.man-heading {
+  color: #ffff55;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.man-content {
+  margin-left: 4rem;
+  color: #ffffff;
+}
+
+.man-content a {
+  color: #ffff55;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.man-header-row {
+  display: flex;
+  justify-content: space-between;
+  color: #ffff55;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
