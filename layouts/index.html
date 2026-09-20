@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ .Site.Title }}</title>
-  <link rel="stylesheet" href="{{ "css/dos.css" | relURL }}">
+  <link rel="stylesheet" href="/css/dos.css">
 </head>
 <body>
   <nav class="dos-nav">
@@ -12,8 +12,11 @@
       <a href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
   </nav>
+
   <main class="dos-container">
     {{ .Content }}
   </main>
+
+  {{ partial "footer.html" . }}
 </body>
 </html>
